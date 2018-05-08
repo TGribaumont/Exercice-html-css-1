@@ -407,7 +407,10 @@ ol li a {
 
 #contact #contactSocial {
     float: right;
-    margin: 90px 100px 0 0;
+    /*margin: 90px 80px 0 0;*/
+    width: 50%;
+    text-align: center;
+    margin-top: 115px;
 }
 
 #contact form input,
