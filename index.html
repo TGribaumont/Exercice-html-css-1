@@ -8,41 +8,24 @@
 </head>
 <body>
 
-    <!--
-        title + 3 subtitles
-        now
-        future
-        hobbies ol
-    
-        div main header, main content, main footer
-        in header   => nav (presentation, contact)
-                    => logo (css)
-        
-        in content  => h1
-                    => content
-    
-        in footer   => copyright
-    
-    -->
-    
-    
-    
     <div id="mainHeader">
         <img id="logo" src="images/logo.png" alt="Logo" height="40" />
         <nav>
             <ul>
-                <li><a href="index.html">Présentation</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#now">Présentation</a></li>
+                <li><a href="#future">Futur</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
     
     <div id="mainContent">
-        <!--<img id="picture" src="images/0.jpeg" alt="Thibault Gribaumont" />-->
         <h1><span>Thibault Gribaumont</span></h1>
+        <p id="jobTitle">Web developer junior @BeCode.org</p>
         <section id="now">
             <h2>Ce que je fais</h2>
-            <a id="linkedinLink" href="https://www.linkedin.com/in/thibault-gribaumont/" title="Linkedin" target="_blank"><img src="images/linkedin_logo.png" alt="Linkedin logo" height="50"/></a>
+            <!--<a id="linkedinLink" href="https://www.linkedin.com/in/thibault-gribaumont/" title="Linkedin" target="_blank"><img src="images/linkedin_logo.png" alt="Linkedin logo" height="50"/></a>-->
             <p>Je suis actuellement en formation chez <strong>BeCode</strong> afin de devenir développeur.</p>
             <p>Je vais apprendre plusieurs langages et technologies dont voici une petite liste non-exhaustive.</p>
                 <ul>
@@ -55,8 +38,43 @@
         
         <section id="future">
             <h2>Ce que je ferai</h2>
-            <img id="web_dev" src="images/img.jpg" alt="Logo" height="300" />
+            <!--<img id="web_dev" src="images/img.jpg" alt="Logo" height="300" />-->
             <p>J'aimerais me lancer comme <em>indépendant</em> dans le développment de sites web et d'applications mobiles.</p>
+            <div id="servicesList">
+                <h3>Services</h3>
+                <div class="servicesItem">
+                    <h4>Responsive websites</h4>
+                    <!--<img src="images/img.jpg" alt="Responsive Desing" />-->
+                    <p class="serviceDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec eros vel sem facilisis volutpat. Nulla placerat congue ornare. Sed iaculis, ex et faucibus volutpat, turpis nisi ultrices nulla, in commodo risus risus a ex.</p>
+                    <p class="serviceSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- end of div services item -->
+                <div class="servicesItem">
+                    <h4>Mobile Apps</h4>
+                    <!--<img src="images/img.jpg" alt="Responsive Desing" />-->
+                    <p class="serviceDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec eros vel sem facilisis volutpat. Nulla placerat congue ornare. Sed iaculis, ex et faucibus volutpat, turpis nisi ultrices nulla, in commodo risus risus a ex.</p>
+                    <p class="serviceSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- end of div services item -->
+                <div class="servicesItem">
+                    <h4>Software development</h4>
+                    <!--<img src="images/img.jpg" alt="Responsive Desing" />-->
+                    <p class="serviceDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec eros vel sem facilisis volutpat. Nulla placerat congue ornare. Sed iaculis, ex et faucibus volutpat, turpis nisi ultrices nulla, in commodo risus risus a ex.</p>
+                    <p class="serviceSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- end of div services item -->
+                <div class="servicesItem">
+                    <h4>Software development</h4>
+                    <!--<img src="images/img.jpg" alt="Responsive Desing" />-->
+                    <p class="serviceDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec eros vel sem facilisis volutpat. Nulla placerat congue ornare. Sed iaculis, ex et faucibus volutpat, turpis nisi ultrices nulla, in commodo risus risus a ex.</p>
+                    <p class="serviceSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- end of div services item -->
+                <div class="servicesItem">
+                    <h4>Software development</h4>
+                    <!--<img src="images/img.jpg" alt="Responsive Desing" />-->
+                    <p class="serviceDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec eros vel sem facilisis volutpat. Nulla placerat congue ornare. Sed iaculis, ex et faucibus volutpat, turpis nisi ultrices nulla, in commodo risus risus a ex.</p>
+                    <p class="serviceSlogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- end of div services item -->
+                <div class="clearfix"></div>
+            </div><!-- end of div services list -->
+            
         </section><!-- end of section Future -->
         
         <section id="hobbies">
@@ -70,15 +88,36 @@
             </ul>
         </section><!-- end of section Hobbies -->
         
-        <form action="" method="GET">
-            <input type="text" name="firstName" placeholder="Enter your first name" />
-            <input type="text" name="lastName" placeholder="Enter your last name" />
-            <input type="submit" value="send" />
-        </form>
-    </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div id="contactSocial">
+                <ul>
+                    <li><a id="gmailLink" href="mailto:t.gribaumont@gmail.com" title="Email"><img src="images/contact2.png" alt="Email logo" height="50"/></a></li>
+                    <li><a id="linkedinLink" href="https://www.linkedin.com/in/thibault-gribaumont/" title="Linkedin" target="_blank"><img src="images/linkedin_logo.png" alt="Linkedin logo" height="50"/></a></li>
+                </ul>
+            </div><!-- end of div contact social -->
+            <form action="" method="POST">
+                
+                <label for="formFirstName">First Name</label><br>
+                    <input type="text" name="firstName" id="formFirstName" placeholder="Enter your first name" required /><br>
+                
+                <label for="formLastName">Last Name</label><br>
+                    <input type="text" name="lastName" id="formLastName" placeholder="Enter your last name" required /><br>
+                
+                <label for="formEmail">Email</label><br>
+                    <input type="email" name="email" id="formEmail" placeholder="Enter your email" required /><br>
+                
+                <label for="formMessage">Message</label><br>
+                    <textarea name="message" id="formMessage"></textarea><br>
+                
+                <input id="contactSubmit" type="submit" value="send" />
+            </form>
+        </section><!-- end of section Contact -->
+
+    </div><!-- end of div mainContent -->
     
     <div id="mainFooter">
-        <p id="copyright">© 2018 - Developed by Thibault Gribaumont</p>
+        <p id="copyright">&copy; 2018 - Developed by Thibault Gribaumont</p>
     </div>
 </body>
 </html>
