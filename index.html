@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700|Ubuntu:300i,400" rel="stylesheet">
+    <title>Thibault Gribaumont - présentation</title>
+</head>
+<body>
+
+    <!--
+        title + 3 subtitles
+        now
+        future
+        hobbies ol
+    
+        div main header, main content, main footer
+        in header   => nav (presentation, contact)
+                    => logo (css)
+        
+        in content  => h1
+                    => content
+    
+        in footer   => copyright
+    
+    -->
+    
+    
+    
+    <div id="mainHeader">
+        <img id="logo" src="images/logo.png" alt="Logo" height="40" />
+        <nav>
+            <ul>
+                <li><a href="index.html">Présentation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="mainContent">
+        <!--<img id="picture" src="images/0.jpeg" alt="Thibault Gribaumont" />-->
+        <h1><span>Thibault Gribaumont</span></h1>
+        <section id="now">
+            <h2>Ce que je fais</h2>
+            <a id="linkedinLink" href="https://www.linkedin.com/in/thibault-gribaumont/" title="Linkedin" target="_blank"><img src="images/linkedin_logo.png" alt="Linkedin logo" height="50"/></a>
+            <p>Je suis actuellement en formation chez <strong>BeCode</strong> afin de devenir développeur.</p>
+            <p>Je vais apprendre plusieurs langages et technologies dont voici une petite liste non-exhaustive.</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp" title="w3School - HTML" target="_blank">HTML</a></li>
+                    <li><a href="https://www.w3schools.com/css/default.asp" title="w3School - CSS" target="_blank">CSS</a></li>
+                    <li><a href="https://www.w3schools.com/js/default.asp" title="w3School - JavaScript" target="_blank">JavaScript</a></li>
+                    <li><a href="https://www.w3schools.com/php/default.asp" title="w3School - PHP" target="_blank">PHP</a></li>
+                </ul>
+        </section><!-- end of section Now -->
+        
+        <section id="future">
+            <h2>Ce que je ferai</h2>
+            <img id="web_dev" src="images/img.jpg" alt="Logo" height="300" />
+            <p>J'aimerais me lancer comme <em>indépendant</em> dans le développment de sites web et d'applications mobiles.</p>
+        </section><!-- end of section Future -->
+        
+        <section id="hobbies">
+            <h2>Ce que j'aime</h2>
+            <!-- <p>Ma passion numéro 1 est le <strong>basket</strong>. J'aime le <strong>sport</strong> en général.<br>
+            J'ai très récemment commencé le <strong>piano</strong>.</p> -->
+            <ul>
+                <li>Basket</li>
+                <li>Sport en général</li>
+                <li>Piano</li>
+            </ul>
+        </section><!-- end of section Hobbies -->
+        
+        <form action="" method="GET">
+            <input type="text" name="firstName" placeholder="Enter your first name" />
+            <input type="text" name="lastName" placeholder="Enter your last name" />
+            <input type="submit" value="send" />
+        </form>
+    </div>
+    
+    <div id="mainFooter">
+        <p id="copyright">© 2018 - Developed by Thibault Gribaumont</p>
+    </div>
+</body>
+</html>
