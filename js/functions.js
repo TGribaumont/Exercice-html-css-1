@@ -1,33 +1,18 @@
 $(document).ready(function() {
     
     /* Display and hide main nav */
-    
-//    function displayHideNav(){
-//        if($('#mainNav').hasClass('active')){
-//            $('#mainNav').removeClass('active');
-//        } else {
-//            $('#mainNav').addClass('active');
-//        }
-//    }
-    
-    $('#mobileNavButton img').click(function(){
-        if($('#mainNav').hasClass('active')){
-            $('#mainNav').removeClass('active');
-            $('body').css('overflow','scroll');
+        
+    $('#navButton').click(function(){
+        if($('#mainHeader nav').hasClass('active')){
+            $('#mainHeader nav').removeClass('active');
+            $('#mainContent').css('display','block');
         } else {
-            $('#mainNav').addClass('active');
-            $('body').css('overflow','hidden');
+            $('#mainHeader nav').addClass('active');
+            $('#mainContent').css('display','none');
         }
     });
-    
-    $('#mainNav ul li a').click(function(){
-        if($('#mainNav').hasClass('active')){
-            $('#mainNav').removeClass('active');
-            $('body').css('overflow','scroll');
-        }
-    });
-    
-    /* Change image in the footer */
+        
+    /* Change images in the footer */
     
     function displayNextImage() {
         x = (x === images.length - 1) ? 0 : x + 1;

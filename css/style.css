@@ -158,6 +158,10 @@ ol li a {
     height: 80px;
 }
 
+#mainHeader {
+    z-index: 15;
+}
+
 @keyframes move
 {
     0% {
@@ -194,16 +198,20 @@ ol li a {
     text-align: center;
 }
 
-#mainHeader nav::before {
-    content: "";
+#mainHeader #navButton {
+/*    content: "";
     background-image: url(../images/menu.png);
-    background-size: contain;
+    background-size: contain;*/
     width: 30px;
     height: 30px;
     position: fixed;
     top: 25px;
-    margin: 0 auto;
+    left: calc(50% - 15px);
+    /*margin: 25px auto 0;*/
     display: none;
+    /*margin-top: 25px;*/
+    cursor: pointer;
+    z-index: 15;
 }
 
 #mainHeader nav ul li {
@@ -490,6 +498,8 @@ ol li a {
 
 #mainFooter #img {
     width: 20px;
+    position: relative;
+    top: 2px;
 }
 
 /*
@@ -501,19 +511,231 @@ ol li a {
 /* 6.1 Max 1150 */
 
 /* Smartphones (portrait and landscape) */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-width : 480px) {
     
+    #mainHeader {
+        position: fixed;
+        top: 0;
+        height: 80px;
+        width: 100%;
+    }
+    
+    #mainHeader #logo {
+        z-index: 10;
+    }
+    
+    #mainHeader #navButton {
+        display: block;
+    }
+    
+    #mainHeader nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        background-color: #4474a3;
+        overflow: hidden;
+        /*display: none;*/
+        bottom: calc(100% - 80px);
+    }
+    
+    #mainHeader nav.active {
+        bottom: 0;
+    }
+    
+    #mainHeader #navButton {
+        display: inline-block;
+    }
+    
+    #mainHeader nav ul {
+        margin-top: 80px;
+        display: none;
+    }
+    
+    #mainHeader nav.active ul {
+        display: block;
+    }
+    
+    #mainHeader nav ul li {
+        font-size: 1.2em;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #mainHeader nav ul li a {
+        line-height: 40px;
+    }
+    
+    #mainHeader nav ul li a::before {
+        content: "";
+        background-image: url(../images/icon_info.png);
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        display: block;
+        /*margin-bottom: 10px;*/
+        margin: 0 auto;
+    }
+    
+    #mainHeader nav ul li #navLinkFuture::before {
+        background-image: url(../images/icon_clock.png);
+    }
+    
+    #mainHeader nav ul li #navLinkHobbies::before {
+        background-image: url(../images/icon_heart.png);
+    }
+    
+    #mainHeader nav ul li #navLinkContact::before {
+        background-image: url(../images/icon_contact.png);
+    }
+    
+    #mainContent {
+        /*display: none;*/
+        margin-top: 130px;
+    }
+    
+    #mainContent h1 {
+        font-size: 2em;
+        height: auto;
+        bottom: 12px;
+    }
+    
+    #mainContent h1:before {
+        width: 60px;
+        height: 60px;
+        top: 12px;
+        display: block;
+        margin: 20px auto 0;
+    }
+    
+    #mainContent #jobTitle {
+        font-size: 1.2em;
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #mainContent h2 {
+        font-size: 2em;
+        bottom: 5px;
+    }
+    
+    #future #servicesList .servicesItem {
+        width: calc(100% - 0px);
+        margin: 0 0 50px;
+    }
+    
+    #future #servicesList .servicesItem p.serviceSlogan {
+        margin: 20px 0 5px;
+    }
+    
+    #contact #contactSocial {
+        margin-top: 80px;
+        float: none;
+    }
+    
+    #contact #contactSocial ul li {
+        margin: 0 auto 30px;
+        display: block;
+/*        margin-bottom: 30px;*/
+    }
+    
+    #contact #contactSocial ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    #contact form input {
+        width: 100%;
+    }
+        
 }
 
 /* Smartphones (landscape) */
 @media only screen and (min-width : 480px) and (max-width : 780px) {
     
-    #mainHeader nav::before {
+    #mainHeader {
+        position: fixed;
+        top: 0;
+        height: 80px;
+        width: 100%;
+    }
+    
+    #mainHeader #logo {
+        z-index: 10;
+    }
+    
+    #mainHeader #navButton {
+        display: block;
+    }
+    
+    #mainHeader nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 5;
+        background-color: #4474a3;
+        overflow: hidden;
+        /*display: none;*/
+        bottom: calc(100% - 80px);
+    }
+    
+    #mainHeader nav.active {
+        bottom: 0;
+    }
+    
+    #mainHeader #navButton {
         display: inline-block;
+    }
+    
+    #mainHeader nav ul {
+        margin-top: 80px;
+        display: none;
+    }
+    
+    #mainHeader nav.active ul {
+        display: block;
     }
     
     #mainHeader nav ul li {
         font-size: 1.2em;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #mainHeader nav ul li a {
+        line-height: 40px;
+    }
+    
+    #mainHeader nav ul li a::before {
+        content: "";
+        background-image: url(../images/icon_info.png);
+        background-size: contain;
+        width: 40px;
+        height: 40px;
+        display: block;
+        /*margin-bottom: 10px;*/
+        margin: 0 auto;
+    }
+    
+    #mainHeader nav ul li #navLinkFuture::before {
+        background-image: url(../images/icon_clock.png);
+    }
+    
+    #mainHeader nav ul li #navLinkHobbies::before {
+        background-image: url(../images/icon_heart.png);
+    }
+    
+    #mainHeader nav ul li #navLinkContact::before {
+        background-image: url(../images/icon_contact.png);
+    }
+    
+    #mainContent {
+        /*display: none;*/
+        margin-top: 130px;
     }
     
     #mainContent h1 {
