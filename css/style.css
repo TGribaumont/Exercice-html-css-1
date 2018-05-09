@@ -2,6 +2,7 @@
 Author: Tibault Gribaumont
 Version: 1.1
 Last update: 7th May 2018
+Initial scale: Small laptops => 1024px - 1224px
 */
 
 
@@ -22,9 +23,16 @@ Table of Contents
         4.1.4 Contact
 5.0 Footer
 6.0 Responsive
-    6.1 Max ????
+    6.1 Smartphones (portrait and landscape) => 320px - 48Opx
+    6.2 Smartphones (landscape) => 48O+ px
+    6.3 Smartphones (landscape)
+    6.3 iPads (portrait) => 768px - 1024px & portrait
+    6.4 iPads (landscape) => 768px - 1024px & landscape
+    6.5 Smaller laptops => 780- px
+    6.6 Smaller laptops => 1024- px
+    6.7 Desktops and laptops => 1224+ px
+    6.8 Large screens => 1824+ px
 */
-
 
 /*
 
@@ -186,6 +194,18 @@ ol li a {
     text-align: center;
 }
 
+#mainHeader nav::before {
+    content: "";
+    background-image: url(../images/menu.png);
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 25px;
+    margin: 0 auto;
+    display: none;
+}
+
 #mainHeader nav ul li {
     display: inline-block;
     padding: 0 20px;
@@ -245,16 +265,16 @@ ol li a {
 
 #mainContent h1 {
     text-align: center;
-    /*margin: 30px 150px 40px;*/
     margin: 50px 0 0;
     line-height: 80px;
     height: 80px;
+    position: relative;
+    bottom: 16px;
 }
 
 #mainContent h1::before {
     content: "";
     display: inline-block;
-    /*float: left;*/
     height: 80px;
     width: 80px;
     border-radius: 40px;
@@ -262,6 +282,8 @@ ol li a {
     background-size: contain;
     line-height: 80px;
     margin-right: 20px;
+    position: relative;
+    top: 16px;
 }
 
 #mainContent h1 span {
@@ -352,7 +374,7 @@ ol li a {
 
 #future #servicesList .servicesItem p.serviceSlogan {
     bottom: 20px;
-    margin: 40px 0;
+    margin: 40px 0 5px;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -478,3 +500,168 @@ ol li a {
 
 /* 6.1 Max 1150 */
 
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 480px) and (max-width : 780px) {
+    
+    #mainHeader nav::before {
+        display: inline-block;
+    }
+    
+    #mainHeader nav ul li {
+        font-size: 1.2em;
+    }
+    
+    #mainContent h1 {
+        font-size: 2em;
+        height: auto;
+        bottom: 12px;
+    }
+    
+    #mainContent h1:before {
+        width: 60px;
+        height: 60px;
+        top: 12px;
+        display: block;
+        margin: 20px auto 0;
+    }
+    
+    #mainContent #jobTitle {
+        font-size: 1.2em;
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #mainContent h2 {
+        font-size: 3em;
+        bottom: 8px;
+    }
+    
+    #future #servicesList .servicesItem {
+        width: calc(100% - 60px);
+        margin: 0 30px 50px;
+    }
+    
+    #future #servicesList .servicesItem p.serviceSlogan {
+        margin: 20px 0 5px;
+    }
+    
+    #contact #contactSocial {
+        margin-top: 80px;
+    }
+    
+    #contact #contactSocial ul li {
+        /*margin: 0 10px;*/
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #contact #contactSocial ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+
+/* iPads (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* Smaller laptops */
+@media only screen and (max-width : 780px) {
+    
+/*    #mainHeader nav ul li {
+        font-size: 1.2em;
+    }
+    
+    #mainContent h1 {
+        font-size: 3em;
+        height: auto;
+        bottom: 12px;
+    }
+    
+    #mainContent h1:before {
+        width: 60px;
+        height: 60px;
+        top: 12px;
+        display: block;
+        margin: 20px auto 0;
+    }
+    
+    #mainContent #jobTitle {
+        font-size: 1.5em;
+        position: relative;
+        bottom: 20px;
+        margin-bottom: 40px;
+    }
+    
+    #mainContent h2 {
+        font-size: 3em;
+        bottom: 8px;
+    }
+    
+    #future #servicesList .servicesItem {
+        width: calc(100% - 60px);
+        margin: 0 30px 50px;
+    }
+    
+    #future #servicesList .servicesItem p.serviceSlogan {
+        margin: 20px 0 5px;
+    }
+    
+    #contact #contactSocial {
+        margin-top: 80px;
+    }
+    
+    #contact #contactSocial ul li {
+        margin: 0 10px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #contact #contactSocial ul li:last-child {
+        margin-bottom: 0;
+    }*/
+    
+}
+
+/* Smaller laptops */
+@media only screen and (min-width : 781px) and (max-width : 1024px) {
+    
+    #mainContent h1 {
+        font-size: 3.5em;
+    }
+    
+    #future #servicesList .servicesItem {
+        width: calc(50% - 22px);
+    }
+    
+    #future #servicesList .servicesItem p.serviceSlogan {
+        padding: 0 30px;
+    }
+    
+    #contact #contactSocial ul li {
+        margin: 0 20px;
+    }
+    
+}
+
+/* Desktops and laptops */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
